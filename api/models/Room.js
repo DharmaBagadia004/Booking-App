@@ -19,4 +19,5 @@ const RoomSchema = new mongoose.Schema({
     },
     roomNumbers:[{number:Number, unavailableDates:{type: [Date]} }],
 },{timestamps: true})
-export default mongoose.model("User",RoomSchema)
+
+export default mongoose.model("Room",RoomSchema)
